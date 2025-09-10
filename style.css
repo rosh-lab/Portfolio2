@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+/* Header section starts here */
+body{
+    height: 100vh;
+    background-color: #333333;
+}
+header{
+    display: flex;
+    padding: 20px;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 30px;
+    align-items: center;
+    color: whitesmoke;
+}
+.nav>.list{
+     display: flex;
+     gap: 60px;
+     list-style: none;
+     font-size: 17px;
+}
+.list>li>a{
+     text-decoration: none;
+     color:rgb(255, 249, 229);
+     color: #e1d0d0;
+}
+.list>li>a:hover{
+    color: aliceblue;
+}
+.home{
+    color: #FFFFFF !important;
+}
+main{
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px;
+}
+.outerdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right>img{
+    height: 75vh;
+    width: 40vw;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left>h5{
+    font-size: 20px;
+    color: #ffbd39;
+}
+.left>h2{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.left>h2>span{
+    color:#ffbd39 ;
+}
+.left>p{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+button{
+    font-size: 15px;
+    width: max-content;
+    padding: 20px 40px;
+    border-radius: 20px 20px;
+    border: none;
+}
+.button{
+    display: flex;
+    gap: 15px;
+}
+.button>.blue{
+    background-color:#7b68ee;
+}
+.button>.blue:hover{
+    background-color:aqua;
+}
+.button>.yellow{
+    background-color: #ffbd39;
+}
+.button>.yellow:hover{
+    background-color:aqua;
+}
+/* Media query for header */
+@media (max-width:990px){
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+    }
+    .outerdiv{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* Header sections ends here */
+/* About starts here */
+#about{
+    background-color: #312f2f   ;
+}
+#about>h2{
+    color: #ffbd39;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.leftabout>h3>span{
+    color: #ffbd39;
+    font-size: 22px;
+}
+.leftabout>h3{
+    color: #CCCCCC;
+    font-size: 22px;
+}
+.leftabout>p{
+    color: #CCCCCC;
+    font-size: 16px;
+}
+.abouticon>h2{
+    color: #CCCCCC;
+    font-size: 18px;
+}
+.outerabout{
+    display: flex;
+    justify-content: space-between;
+}
+.leftabout{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.abouticon{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.icon>i{
+    clip-path: circle();
+    background-color: #163d4d;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.rightabout>.box>h1{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+.rightabout>.box>p{
+    color: #CCCCCC;
+    font-size: 15px;
+}
+.rightabout{
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding: 10px;
+}
+.rightabout>.box{
+    background-color: #333333;
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* Our resume starts here */
+.resumediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.resumediv>h1{
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+.resumediv>p{
+    font-size: 16px;
+    color: #CCCCCC;
+}
+.edu{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #CCCCCC;
+    font-size: 30px;
+
+}
+.outereducation>h1{
+    text-align: center;
+    margin-top: 40px;
+}
+.innereducation{
+    height: 30vh;
+    width: 25vw;
+    border: 1px solid grey;
+    box-shadow: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+}
+.outereducation{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.innereducation>div>span{
+    width: max-content;
+    border: 1px solid yellow;
+    background-color: #ffbd39;
+    border-radius: 20px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+.innereducation>h3{
+    color: #FFFFFF;
+}
+.innereducation>p{
+    color: #CCCCCC;
+}
+/* Media query for about me */
+@media (max-width:1000px){
+    .outerabout{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* media query for our resume */
+@media (max-width:1243px){
+    .innereducation>p{
+        font-size: 12px;
+    }
+    .outereducation{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 30px;
+        column-gap: 2px;
+    }
+    .innereducation{
+        height: 40vh;
+        width: 30vw;
+    }
+}
+@media (max-width:550px){
+    .innereducation>p{
+        font-size: 16px;
+    }
+    .outereducation{
+        display:flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .innereducation{
+        height: 45vh;
+        width: 60vw;
+    }
+}
