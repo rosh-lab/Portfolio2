@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
+
 /* Header section starts here */
-body{
+body {
     height: 100vh;
     background-color: #333333;
 }
-header{
+
+header {
     display: flex;
     padding: 20px;
     max-width: 1280px;
@@ -21,142 +24,170 @@ header{
     align-items: center;
     color: whitesmoke;
 }
-.nav>.list{
-     display: flex;
-     gap: 60px;
-     list-style: none;
-     font-size: 17px;
+
+.nav>.list {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    font-size: 17px;
 }
-.list>li>a{
-     text-decoration: none;
-     color:rgb(255, 249, 229);
-     color: #e1d0d0;
+
+.list>li>a {
+    text-decoration: none;
+    color: rgb(255, 249, 229);
+    color: #e1d0d0;
 }
-.list>li>a:hover{
+
+.list>li>a:hover {
     color: aliceblue;
 }
-.home{
+
+.home {
     color: #FFFFFF !important;
 }
-main{
+
+main {
     max-width: 1280px;
     margin: auto;
     padding: 20px;
 }
-.outerdiv{
+
+.outerdiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.right>img{
+
+.right>img {
     height: 75vh;
     width: 40vw;
 }
-.left{
+
+.left {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.left>h5{
+
+.left>h5 {
     font-size: 20px;
     color: #ffbd39;
 }
-.left>h2{
+
+.left>h2 {
     font-size: 30px;
     color: #FFFFFF;
 }
-.left>h2>span{
-    color:#ffbd39 ;
+
+.left>h2>span {
+    color: #ffbd39;
 }
-.left>p{
+
+.left>p {
     font-size: 18px;
     color: #FFFFFF;
 }
-button{
+
+button {
     font-size: 15px;
     width: max-content;
     padding: 20px 40px;
     border-radius: 20px 20px;
     border: none;
 }
-.button{
+
+.button {
     display: flex;
     gap: 15px;
 }
-.button>.blue{
-    background-color:#7b68ee;
+
+.button>.blue {
+    background-color: #7b68ee;
 }
-.button>.blue:hover{
-    background-color:aqua;
+
+.button>.blue:hover {
+    background-color: aqua;
 }
-.button>.yellow{
+
+.button>.yellow {
     background-color: #ffbd39;
 }
-.button>.yellow:hover{
-    background-color:aqua;
+
+.button>.yellow:hover {
+    background-color: aqua;
 }
+
 /* Media query for header */
-@media (max-width:990px){
-    header{
+@media (max-width:990px) {
+    header {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .list{
+
+    .list {
         display: flex;
         flex-direction: column;
     }
-    .outerdiv{
+
+    .outerdiv {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .button{
+
+    .button {
         display: flex;
         justify-content: center;
     }
 }
+
 /* Header sections ends here */
 /* About starts here */
-#about{
-    background-color: #312f2f   ;
-}
-#about>h2{
+#about>h2 {
     color: #ffbd39;
     font-size: 20px;
     margin-bottom: 20px;
 }
-.leftabout>h3>span{
+
+.leftabout>h3>span {
     color: #ffbd39;
     font-size: 22px;
 }
-.leftabout>h3{
+
+.leftabout>h3 {
     color: #CCCCCC;
     font-size: 22px;
 }
-.leftabout>p{
+
+.leftabout>p {
     color: #CCCCCC;
     font-size: 16px;
 }
-.abouticon>h2{
+
+.abouticon>h2 {
     color: #CCCCCC;
     font-size: 18px;
 }
-.outerabout{
+
+.outerabout {
     display: flex;
     justify-content: space-between;
 }
-.leftabout{
+
+.leftabout {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.abouticon{
+
+.abouticon {
     display: flex;
     gap: 15px;
     align-items: center;
 }
-.icon>i{
+
+.icon>i {
     clip-path: circle();
     background-color: #163d4d;
     padding: 18px;
@@ -164,64 +195,75 @@ button{
     justify-content: center;
     color: #FFFFFF;
 }
-.rightabout>.box>h1{
+
+.rightabout>.box>h1 {
     color: #FFFFFF;
     font-size: 30px;
 }
-.rightabout>.box>p{
+
+.rightabout>.box>p {
     color: #CCCCCC;
     font-size: 15px;
 }
-.rightabout{
-    display: grid ;
-    grid-template-columns: repeat(2,1fr);
+
+.rightabout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
     row-gap: 30px;
     column-gap: 30px;
     padding: 10px;
+    background-color: #163d4d;
 }
-.rightabout>.box{
+
+.rightabout>.box {
     background-color: #333333;
     height: 150px;
     width: 250px;
     padding: 20px;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 /* Our resume starts here */
-.resumediv{
+.resumediv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-.resumediv>h1{
+
+.resumediv>h1 {
     font-size: 30px;
     color: #FFFFFF;
     margin-top: 25px;
 }
-.resumediv>p{
+
+.resumediv>p {
     font-size: 16px;
     color: #CCCCCC;
 }
-.edu{
+
+.edu {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
     color: #CCCCCC;
     font-size: 30px;
-
 }
-.outereducation>h1{
+
+.outereducation>h1 {
     text-align: center;
     margin-top: 40px;
 }
-.innereducation{
+
+.innereducation {
     height: 30vh;
     width: 25vw;
     border: 1px solid grey;
@@ -231,11 +273,13 @@ button{
     padding: 30px;
     gap: 10px;
 }
-.outereducation{
+
+.outereducation {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-.innereducation>div>span{
+
+.innereducation>div>span {
     width: max-content;
     border: 1px solid yellow;
     background-color: #ffbd39;
@@ -243,15 +287,18 @@ button{
     padding: 5px;
     color: #FFFFFF;
 }
-.innereducation>h3{
+
+.innereducation>h3 {
     color: #FFFFFF;
 }
-.innereducation>p{
+
+.innereducation>p {
     color: #CCCCCC;
 }
+
 /* Media query for about me */
-@media (max-width:1000px){
-    .outerabout{
+@media (max-width:1000px) {
+    .outerabout {
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -259,35 +306,158 @@ button{
         align-items: center;
     }
 }
+
 /* media query for our resume */
-@media (max-width:1243px){
-    .innereducation>p{
+@media (max-width:1243px) {
+    .innereducation>p {
         font-size: 12px;
     }
-    .outereducation{
+    .outereducation {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
         column-gap: 2px;
     }
-    .innereducation{
+
+    .innereducation {
         height: 40vh;
         width: 30vw;
     }
 }
-@media (max-width:550px){
-    .innereducation>p{
+
+@media (max-width:550px) {
+    .innereducation>p {
         font-size: 16px;
     }
-    .outereducation{
-        display:flex;
+
+    .outereducation {
+        display: flex;
         flex-direction: column;
         row-gap: 30px;
         justify-content: center;
         align-items: center;
     }
-    .innereducation{
+
+    .innereducation {
         height: 45vh;
         width: 60vw;
     }
+}
+
+/* My experience section starts here.. */
+.exp {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #CCCCCC;
+    font-size: 30px;
+}
+
+.experience {
+    height: 30vh;
+    width: 25vw;
+    border: 1px solid grey;
+    box-shadow: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+}
+
+.outerexperience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.experience>div>span {
+    width: max-content;
+    border: 1px solid yellow;
+    background-color: #ffbd39;
+    border-radius: 20px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.experience>h3 {
+    color: #FFFFFF;
+}
+
+.experience>p {
+    color: #CCCCCC;
+}
+
+/* media query for our resume  experience*/
+@media (max-width:1243px) {
+    .experience>p {
+        font-size: 12px;
+    }
+    .outerexperience {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 2px;
+    }
+
+    .experience{
+        height: 40vh;
+        width: 30vw;
+    }
+}
+
+@media (max-width:550px) {
+    .experience>p {
+        font-size: 16px;
+    }
+
+    .outerexperience {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience {
+        height: 45vh;
+        width: 60vw;
+    }
+}
+/* Our portfolio starts here */
+.portfoliodiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+.portrange{
+    width: 9vw;
+    place-self: center;
+}
+.portfoliodiv>h1 {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+.portfoliodiv>p {
+    font-size: 16px;
+    color: #CCCCCC;
+}
+.unordered{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    margin-top: 50px;
+}
+.unordered>li>a{
+    text-decoration: none;
+    color: #CCCCCC;
+}
+.unordered>li>a:hover{
+    color: #ffbd39;
+}
+.outerimage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
