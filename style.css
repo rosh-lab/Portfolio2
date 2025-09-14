@@ -449,6 +449,7 @@ button {
     list-style: none;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .unordered>li>a{
     text-decoration: none;
@@ -460,4 +461,167 @@ button {
 .outerimage{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+.innerimage>img{
+    height: 450px;
+    width: 400px;
+}
+/* Media query for portfolio */
+@media (max-width:1200px){
+    .outerimage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+}
+@media (max-width:800px){
+    .outerimage{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    place-self: center;
+}
+   .portfoliodiv>p{
+        text-align: center;
+        font-size: 15px;
+   }
+   .portrange{
+    width: max-content;
+   }
+}
+/* our latest blog starts here */
+.blogdiv{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     gap: 15px;
+}
+.blogrange{
+     width: 9vw;
+    place-self: center;
+}
+.blogdiv>h1{
+     font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+.blogdiv>p{
+     font-size: 16px;
+    color: #CCCCCC;
+}
+.outerblog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    column-gap: 40px;
+    margin-top: 30px;
+
+}
+.content>h3{
+    color: #CCCCCC;
+}
+.content>p{
+    color: #CCCCCC;
+}
+.content>h4{
+    color: #CCCCCC;
+}
+.innerblog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid grey;
+    box-shadow: 2px 2px whitesmoke;
+    height: 40vh;
+    width: 25vw;
+    padding: 20px 20px;
+}
+/* media query for our blog */
+@media (max-width:1441px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        width: 30vw;
+    }
+}
+@media (max-width:1200px){
+    .outerblog{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+}
+@media (max-width:782px){
+    .outerblog{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+    .blogdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+     .content{
+        height: 50vh;
+        width: 40vw;
+        font-size: 12px;
+    }
+    .blogrange{
+        width: max-content;
+    }
+}
+@media (max-width:425px){
+          .content{
+        height: 50vh;
+        width: 40vw;
+        font-size: 8px;
+    } 
+}
+/* Contact me starts here */
+.contactdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+.contactdiv>h2{
+     font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+.contactdiv>p{
+     font-size: 16px;
+    color: #CCCCCC;
+    text-align: center;
+}
+.contactform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
