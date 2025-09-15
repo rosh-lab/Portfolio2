@@ -249,7 +249,9 @@ button {
     font-size: 16px;
     color: #CCCCCC;
 }
-
+.resumerange{
+    width: max-content;
+}
 .edu {
     text-align: center;
     margin-top: 40px;
@@ -619,9 +621,169 @@ button {
     color: #CCCCCC;
     text-align: center;
 }
+.contactrange{
+    width: max-content;
+}
 .contactform{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.for{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+.spaninp{
+    display: flex;
+    gap: 20px;
+}
+.spaninp>input{
+    height: 7vh;
+    width: 25vw;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+}
+input{
+    height: 7vh;
+    width: 51.5vw;
+    background: transparent;
+    padding: 20px;
+    border: 1px solid whitesmoke;
+}
+textarea{
+    height: 18vh;
+    width: 51.5vw;
+    background: transparent;
+    padding: 20px;
+    border: 1px solid whitesmoke;
+}
+.btn{
+    background-color: #7b68ee;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+}
+/* media query for contact me */
+@media (max-width:860px){
+    .contactdiv>p{
+      font-size: 12px;
+    color: #CCCCCC;
+    text-align: center;
+}
+    .contactdiv>h2{
+     font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+  .contactrange{
+    width: 10vw;
+  }
+}
+@media (max-width:680px){
+     .contactdiv>p{
+      font-size: 10px;
+    color: #CCCCCC;
+    text-align: center;
+}
+    .contactdiv>h2{
+     font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+  .contactrange{
+    width: max-content
+  }
+  .for{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+}
+/* Footer section starts here */
+.footer{
+    width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    margin-top: 100px;
+    padding: 20px 20px;
+}
+.rosh{
+    display: flex;
+    flex-direction: column;
+}
+.rosh>h2{
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.rosh>p{
+    color: #CCCCCC;
+    font-size: 15px;
+}
+.footerlink>h2{
+    color: #FFFFFF;
+}
+.footerlink>h2{
+    color: #CCCCCC;
+    font-size: 15px;
+}
+.footerlink>h3{
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.footerlink>p{
+    font-size: 15px;
+    color: #CCCCCC;
+}
+.footericon{
+    display: flex;
+    gap: 15px;
+} 
+.footerspan{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+.lastfooter>p{
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom:30px;
+    text-align: center;
+    padding: 20px 20px;
+}
+/* media query for footer */
+@media (max-width:650px){
+    .footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width:520px){
+    .footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.rosh>h2{
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
 }
